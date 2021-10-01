@@ -7,6 +7,8 @@
 # project
 .project
 .settings
+.classpath
+target
 
 # BlueJ files
 *.ctxt
