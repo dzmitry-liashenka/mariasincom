@@ -4,6 +4,10 @@
 # Log file
 *.log
 
+# project
+.project
+.settings
+
 # BlueJ files
 *.ctxt
 
