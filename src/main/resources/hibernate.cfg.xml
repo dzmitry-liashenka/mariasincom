@@ -6,11 +6,20 @@
 <hibernate-configuration>
     <session-factory>
  
-        <!-- Connection settings -->
-        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <!-- Connection settings local -->
+<!--         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/shop</property>
         <property name="hibernate.connection.username">mitry</property>
-        <property name="hibernate.connection.password">111</property>
+        <property name="hibernate.connection.password">111</property> -->
+       
+       
+        <!-- Connection settings heroku -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">ec2-3-248-103-75.eu-west-1.compute.amazonaws.com:5432/dbbqlbe7i7a0s3</property>
+        <property name="hibernate.connection.username">ymnktrwgnutrqx</property>
+        <property name="hibernate.connection.password">dc0b5cdd70c1f769441aae6b71dbf87890345b9cd2c3fd2288af78242a341f75</property>
+        
+        
  
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
